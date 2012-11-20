@@ -1,40 +1,8 @@
-/*var row = 3;
-var col = 5;
-var createList = '';
 
-var totalSquares = row*col;
-
-for(i=1;i<=totalSquares; i++){
-  if(i%col === 0){
-    console.log(i +" new line");
-  } else {
-    console.log(i);
-  }
-}
-
-====================
-				if(i%col === 0){
-					if (colNum%2 === 0){
-						console.log('number is even');
-						$('#chessboard ul').append('<li class="eor even"></li>');
-					} else {
-						console.log('number is odd');
-						$('#chessboard ul').append('<li class="eor odd"></li>');
-					}
-
-				}else {
-					// console.log(i);
-					$('#chessboard ul').append('<li></li>');
-				}
-
-*/
 var chessboard = chessboard || {};
     chessboard.createForm = chessboard.createForm || {};
     chessboard.board = chessboard.board || {};
     chessboard.center = chessboard.center || {};
-    
-    chessboard.varaibles = {};
-
 //Create the form dropdown
 (function(){
 	var colNum =8,
@@ -137,16 +105,7 @@ var chessboard = chessboard || {};
 	};
 }.apply(chessboard.board));
 
-//center chessboard
-(function(){
-	this.init = function(){
-
-	};
-
-}.apply(chessboard.center));
-//
 $(document).ready(function(){
 	chessboard.createForm.init();
 	chessboard.board.init();
-	chessboard.center.init();
 });
